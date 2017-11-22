@@ -100,6 +100,8 @@ a{
 .welcome h1{
 	font-size: 48px;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
 }
 .welcome span{
 	font-family: RobotoSlab,sans-serif;
