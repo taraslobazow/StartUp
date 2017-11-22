@@ -83,8 +83,8 @@ h3{
 	line-height: 24px;
 	font-style: normal;
 }
+
 .menu li a{
-	display: inline-block;
 	margin-right: 30px;
 	font-family: Montserrat,sans-serif;
 	color:  #ffffff;
@@ -97,7 +97,13 @@ h3{
 	margin-right: 0;
 }
 .menu li:hover a{
-	border-bottom: 2px solid white;
+	background: url("../img/header_opac-bnd.png");
+	border-radius: 5px;
+	text-align: center;
+
+
+
+
 	
 }
 .welcome{
