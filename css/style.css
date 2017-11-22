@@ -97,7 +97,8 @@ h3{
 	margin-right: 0;
 }
 .menu li:hover a{
-	color: #b0b0b0;
+	border-bottom: 2px solid white;
+	
 }
 .welcome{
 	width: 600px;
