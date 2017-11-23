@@ -251,7 +251,33 @@ h3{
 .about-bot{
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
+.about-bot:before{
+	content: '';
+	display: block;
+	width: 35px;
+	height: 38px;
+	background: url("../img/arrow-prev.png");
+	position: absolute;
+	z-index: 2;
+	top: 32%;
+	cursor: pointer;
+}
+
+.about-bot:after{
+	content: '';
+	display: block;
+	width: 35px;
+	height: 38px;
+	background: url("../img/arrow-next.png");
+	position: absolute;
+	z-index: 2;
+	top: 32%;
+	right: 0;
+	cursor: pointer;
+}
+
 
 figure{
 	display: flex;
