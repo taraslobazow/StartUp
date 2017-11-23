@@ -372,12 +372,57 @@ figure:hover .about-hover-block{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;
-
 }
 .works-item{
 	width: 360px;
 	height: 320px;
 	background-color: #555555;
+	position: relative;
+}
+.works-item-hover{
+	background: url("../img/works-bn-hover.png");
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 100px;
+}
+.works-item-hover h6{
+	font-family: Montserrat,sans-serif;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 15px;
+	margin-top: 0;
+	padding: 0;
+}
+.works-item-hover span{
+	font-family: RobotoSlab,sans-serif;
+	color:  #ffffff;
+	font-size: 12px;
+	line-height: 24px;
+	margin-bottom: 25px;
+}
+.works-item-hover a{
+	display: inline-flex;
+	background-color:  #ffffff;
+	width: 100px;
+	height: 38px;
+	font-family: RobotoSlab,sans-serif;
+	color:  #c0301c;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+}
+.works-item:hover .works-item-hover{
+	display: flex;
 }
 
 
