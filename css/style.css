@@ -281,7 +281,17 @@ figcaption span{
 	font-size: 13px;
 	font-weight: 700;
 	line-height: 20px;
-
+	position: relative;
+}
+.about-hover-block{
+	display: none;
+	width: 263px;
+	height: 250px;
+	position: absolute;
+	background: url('../img/photo-item-hover.png');
+}
+figure:hover .about-hover-block{
+	display: block;
 }
 
 
