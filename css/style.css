@@ -290,8 +290,25 @@ figcaption span{
 	position: absolute;
 	background: url('../img/photo-item-hover.png');
 }
+.about-social{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width:116px;
+	height: 30px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.about-social a{
+	color: #ffffff;
+}
+.about-social .fa:hover{
+	color:  #c0301c;
+}
 figure:hover .about-hover-block{
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 
