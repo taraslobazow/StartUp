@@ -169,7 +169,7 @@ h3{
 	height: 2px;
 	margin: 30px 0;
 }
-.services-top span, .about-top span{
+.services-top span, .about-top span, .blog-top span{
 	font-family: RobotoSlab, sans-serif;
 	color:  #555555;
 	font-size: 16px;
@@ -465,6 +465,104 @@ figure:hover .about-hover-block{
 }
 .project:hover .project-hover{
 	display: flex;
+}
+.blog .container{
+	flex-direction: column;
+}
+.blog-top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.blog-item1{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	border-bottom: 1px solid #555555;
+}
+.blog-item-img{
+	width: 460px;
+	height: 322px;
+	background: url("../img/blog-img1.png");
+	margin-bottom: 40px;
+}
+.blog-item-content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 255px;
+	width: 640px;
+
+}
+.blog-date-block{
+	display: flex;
+	border: 2px solid #555555;
+	width: 72px;
+	height: 72px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.date{
+	font-family: Montserrat, sans-serif;
+	color:  #777777;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.month{
+	font-family: Montserrat,sans-serif;
+	color:  #777777;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.blog-item-content h4{
+	margin-left: 100px;
+	margin-bottom: 0;
+
+}
+.blog-item-content h4 a{
+	font-family: Montserrat,sans-serif;
+	color: #c0301c;
+	font-size: 16px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	text-transform: uppercase;
+}
+.develop{
+	margin-left: 100px;
+	font-family: RobotoSlab,sans-serif;
+	color:  #777777;
+	font-size: 13px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 24px;/* Приближение из-за подстановки шрифтов */
+	margin-top: -20px;
+	margin-bottom: 20px;
+	font-style:italic;
+}
+.develop a{
+	font-family: RobotoSlab,sans-serif;
+	color:  #c0301c;
+	font-size: 13px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 24px;/* Приближение из-за подстановки шрифтов */
+}
+.read{
+	margin-top: 35px;
+}
+.read a{
+	font-family: RobotoSlab,sans-serif;
+	color:  #c0301c;
+	font-size: 13px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	line-height: 24px;/* Приближение из-за подстановки шрифтов */
+	text-transform: uppercase;
 }
 
 
