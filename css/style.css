@@ -426,6 +426,48 @@ figure:hover .about-hover-block{
 .works-item:hover .works-item-hover{
 	display: flex;
 }
+.project{
+	background-color:  rgba(192, 48, 28, 0.6);
+	width: 100%;
+	height: 369px;
+	background: url("../img/project-bn.png") no-repeat;
+	background-size: cover;
+}
+.project-hover{
+	background: url("../img/works-bn-hover.png");
+	width: 100%;
+	height: 100%;
+	display: none;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.project-hover span{
+	font-family: RobotoSlab,sans-serif;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 44px;
+	text-align: center;
+}
+.project-hover a{
+	border-radius: 2px;
+	background-color:  #ffffff;
+	width: 180px;
+	height: 50px;
+	font-family: RobotoSlab,sans-serif;
+	color: #c0301c;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 44px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 53px;
+}
+.project:hover .project-hover{
+	display: flex;
+}
+
 
 
 
