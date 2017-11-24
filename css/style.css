@@ -14,6 +14,7 @@
 	font-family: RobotoSlab;
 	src: url('../fonts/RobotoSlab-Light.ttf')
 }
+
 html{
 	min-width: 1140px;
 }
@@ -59,10 +60,12 @@ h3{
 	background: url("../img/header_opac-bnd.png") no-repeat, url("../img/header_main_bgn.png") no-repeat;
 	background-size: cover;
 	overflow: hidden;
+	transition: 0.5s;
 }
 .header:hover{
 	background: url("../img/header_main_bgn.png") no-repeat;
 	background-size: cover;
+
 }
 
 
@@ -96,14 +99,14 @@ h3{
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
+transition: 0.3s;
 }
 .menu li:last-child{
 	margin-right: 0;
 }
 .menu li:hover a{
-	background: url("../img/header_opac-bnd.png");
-	border-radius: 5px;
-	text-align: center;
+	color: #F7E188;
+	text-shadow: 1px 1px 2px black;
 }
 .welcome{
 	width: 600px;
@@ -144,6 +147,7 @@ h3{
 }
 .get-start-btn:hover{
 	background: url("../img/header_opac-bnd.png");
+
 }
 .get-start-btn:active{
 	box-shadow: inset 2px 2px 6px;
@@ -151,8 +155,7 @@ h3{
 }
 main{
 	padding-bottom: 100px;
-	/*box-sizing: border-box;*/
-	/*position: relative;*/
+
 }
 .services{
 	display: flex;
@@ -206,7 +209,8 @@ main{
 	align-items: center;
 	justify-content: center;
 	color: #c0301c;
-	background-color:  #ffffff
+	background-color:  #ffffff;
+	transition: 0.5s;
 }
 .services-item a:hover{
 	background-color: #c0301c;
@@ -313,11 +317,15 @@ figcaption span{
 	position: relative;
 }
 .about-hover-block{
-	display: none;
 	width: 263px;
 	height: 250px;
 	position: absolute;
 	background: url('../img/photo-item-hover.png');
+	opacity: 0;
+	transition: 0.8s;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 .about-social{
 	display: flex;
@@ -327,17 +335,19 @@ figcaption span{
 	height: 30px;
 	margin-bottom: 30px;
 	font-size: 20px;
+	transition: 0.8s;
 }
 .about-social a{
 	color: #ffffff;
 }
+.about-social .fa{
+	transition: 0.3s;
+}
 .about-social .fa:hover{
-	color:  #c0301c;
+	color:  #c0301c;transition: 1s;
 }
 figure:hover .about-hover-block{
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+	opacity: 1;
 }
 .works .container{
 	flex-direction: column;
@@ -359,6 +369,7 @@ figure:hover .about-hover-block{
 	font-weight: 600;
 	line-height: 24px;
 	margin-right: 25px;
+	transition: 0.2s;
 }
 .works-menu a:hover{
 	color:  #c0301c;
@@ -386,12 +397,14 @@ figure:hover .about-hover-block{
 	position: absolute;
 	width: 360px;
 	height: 220px;
-	display: none;
 	align-items: center;
 	flex-direction: column;
 	padding-top: 100px;
-
+	opacity: 0;
+	transition: 0.5s;
+	display: flex;
 }
+
 .works-item-hover h6{
 	font-family: Montserrat,sans-serif;
 	color:  #ffffff;
@@ -425,9 +438,10 @@ figure:hover .about-hover-block{
 	align-items: center;
 }
 .works-item:hover .works-item-hover{
-	display: flex;
+	opacity: 1;
+
 }
-.project{
+.project {
 	width: 100%;
 	height: 369px;
 	background: url("../img/project-bn.png") no-repeat;
@@ -437,10 +451,15 @@ figure:hover .about-hover-block{
 	background: url("../img/works-bn-hover.png");
 	width: 100%;
 	height: 100%;
-	display: none;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	opacity: 0;
+	transition: 0.8s;
+	display: flex;
+}
+.project-hover:hover{
+	opacity: 1;
 }
 .project-hover span{
 	font-family: RobotoSlab,sans-serif;
@@ -463,9 +482,11 @@ figure:hover .about-hover-block{
 	text-align: center;
 	text-transform: uppercase;
 	margin-top: 53px;
+
 }
 .project:hover .project-hover{
 	display: flex;
+	transition: 1.5s;
 }
 
 .blog .container{
