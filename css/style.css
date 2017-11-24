@@ -169,7 +169,7 @@ h3{
 	height: 2px;
 	margin: 30px 0;
 }
-.services-top span, .about-top span, .blog-top span{
+.services-top span, .about-top span, .blog-top span, .contacts-top span{
 	font-family: RobotoSlab, sans-serif;
 	color:  #555555;
 	font-size: 16px;
@@ -629,6 +629,75 @@ figure:hover .about-hover-block{
 .circle-item:hover{
 	background-color: #c0301c;
 }
+.contacts .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contacts-top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 70px;
+}
+.contacts-content{
+	display: flex;
+}
+.contacts-address{
+	width: 230px;
+	height: 270px;
+	background-color: #dddddd;
+}
+form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 730px;
+	position: relative;
+}
+input[type="text"], input[type="email"], input[type="submit"], textarea {
+	border-width: 1px;
+	border-color:  #555555;
+	border-style: solid;
+	width: 348px;
+	height: 42px;
+	font-family: RobotoSlab.sans-serif;
+	color:  #555555;
+	font-size: 12px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 20px;/* Приближение из-за подстановки шрифтов */
+	padding-left: 10px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+textarea{
+	width: 728px;
+	height: 102px;
+	resize: none;
+}
+#submit{
+	background: none;
+	width: 168px;
+	height: 42px;
+}
+form span{
+	font-family: RobotoSlab, sans-serif;
+	color:  #555555;
+	font-size: 12px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 20px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	position: absolute;
+	bottom: 22px;
+	left: 200px;
+
+}
+form span:before{
+	content: '*';
+	color: #c0301c;
+}
+
 
 
 
