@@ -149,6 +149,11 @@ h3{
 	box-shadow: inset 2px 2px 6px;
 	font-size: 0.9em;
 }
+main{
+	padding-bottom: 100px;
+	/*box-sizing: border-box;*/
+	/*position: relative;*/
+}
 .services{
 	display: flex;
 	flex-direction: column;
@@ -594,7 +599,7 @@ figure:hover .about-hover-block{
 .partner-logo{
 	width: 100%;
 	height: 60px;
-	display: flex;justify-content: space-between;
+	display: flex;justify-content: space-around;
 	margin-top: 100px;
 	margin-bottom: 70px;
 }
@@ -642,12 +647,18 @@ figure:hover .about-hover-block{
 	margin-bottom: 70px;
 }
 .contacts-content{
+	width: 100%;
+	height: 300px;
 	display: flex;
+	justify-content: space-between;
 }
 .contacts-address{
+	display: flex;
 	width: 230px;
 	height: 270px;
-	background-color: #dddddd;
+	flex-wrap: wrap;
+}
+.address-item{
 }
 form{
 	display: flex;
@@ -657,12 +668,10 @@ form{
 	position: relative;
 }
 input[type="text"], input[type="email"], input[type="submit"], textarea {
-	border-width: 1px;
-	border-color:  #555555;
-	border-style: solid;
+	border: 1px solid #555555;
 	width: 348px;
 	height: 42px;
-	font-family: RobotoSlab.sans-serif;
+	font-family: RobotoSlab,sans-serif;
 	color:  #555555;
 	font-size: 12px;/* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
@@ -680,6 +689,7 @@ textarea{
 	background: none;
 	width: 168px;
 	height: 42px;
+	cursor: pointer;
 }
 form span{
 	font-family: RobotoSlab, sans-serif;
@@ -691,13 +701,81 @@ form span{
 	position: absolute;
 	bottom: 22px;
 	left: 200px;
-
 }
 form span:before{
 	content: '*';
 	color: #c0301c;
 }
+.address-item h5{
+	font-family: Montserrat,sans-serif;
+	color:  #555555;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 30px;/* Приближение из-за подстановки шрифтов */
+	text-transform: uppercase;
+	margin: 0;
+	padding-left: 26px;
+	box-sizing: border-box;
+}
+.address-item span{
+	font-family: RobotoSlab,sans-serif;
+	color:  #555555;
+	font-size: 12px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 20px;/* Приближение из-за подстановки шрифтов */
+}
+.address{
+	background: url("../img/fa-map-marker.png") no-repeat left;
+}
+.hot-line{
+	 background: url("../img/fa-mobile-phone.png") no-repeat left;
+}
 
+.address-email{
+	background: url("../img/fa-envelope-o.png") no-repeat left;
+}
+footer{
+	background-color:  #c0301c;
+	width: 100%;
+	height: 307px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.footer-social{
+	display: flex;
+}
+.footer-social a{
+	margin-right: 15px;
+}
+.footer-social a:last-child{
+	 margin-right:0;
+ }
+.social-item{
+	width: 31px;
+	height: 31px;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+}
+footer .underline{
+	background-color: #ffffff;
+}
+footer span, footer a{
+	font-family: RobotoSlab,sans-serif;
+	color:  #ffffff;
+	font-size: 12px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 20px;/* Приближение из-за подстановки шрифтов */
+	text-transform: uppercase;
+}
+footer a{
+	display: inline-block;
+}
 
 
 
